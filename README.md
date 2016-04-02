@@ -20,7 +20,9 @@ hmac_headers = generate_hmac(aws_access_id, aws_secret_key);
 console.log(hmac_headers);
 
 /*
-
+{ Date: 'Sat, 02 Apr 2016 03:33:17 GMT',
+  'X-Amzn-Authorization': 'AWS3-HTTPS
+  AWSAccessKeyId=ramhiser,Algorithm=HMACSHA256,Signature=OIPTkauadMhOOTWJsoKcFMv7jAldNOz45pCDwYegmKI=' }
 */
 ```
 
