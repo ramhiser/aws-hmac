@@ -1,0 +1,23 @@
+{
+  "name": "aws-hmac",
+  "version": "1.0.0",
+  "description": "A utility to generate an HMAC signature to authorize AWS API requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramhiser/aws-hmac.git"
+  },
+  "keywords": [
+    "aws",
+    "hmac"
+  ],
+  "author": "John Ramey <johnramey@gmail.com> (http://ramhiser.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramhiser/aws-hmac/issues"
+  },
+  "homepage": "https://github.com/ramhiser/aws-hmac"
+}
