@@ -32,3 +32,17 @@ function generate_signature(aws_access_id, aws_secret_key) {
     };
     return headers;
 }
+
+module.exports = {
+    generate_signature: function(aws_access_id, aws_secret_key) {
+        var d = new Date().toUTCString();
+        var hmac = generate_hmac(d, aws_secret_key);
+        var auth_str = "AWS3-HTTPS AWSAccessKeyId=" + aws_access_id
+        auth_str = auth_str + ",Algorithm=HMACSHA256,Signature=" + hmac
+        var signature = {
+            "Date" : d,
+            "X-Amzn-Authorization" : auth_str
+        };
+        return signature;
+    }
+}
