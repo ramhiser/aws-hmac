@@ -21,18 +21,6 @@ function generate_hmac(data, aws_secret_key, algorithm, encoding) {
  * @param aws_secret_key [Required] Secret key used to access AWS services
  * @returns JSON object with AWS signature headers
  */
-function generate_signature(aws_access_id, aws_secret_key) {
-    var d = new Date().toUTCString();
-    var hmac = generate_hmac(d, aws_secret_key);
-    var auth_str = "AWS3-HTTPS AWSAccessKeyId=" + aws_access_id
-    auth_str = auth_str + ",Algorithm=HMACSHA256,Signature=" + hmac
-    headers = {
-        "Date" : d,
-        "X-Amzn-Authorization" : auth_str
-    };
-    return headers;
-}
-
 module.exports = {
     generate_signature: function(aws_access_id, aws_secret_key) {
         var d = new Date().toUTCString();

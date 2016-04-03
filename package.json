@@ -4,7 +4,7 @@
   "description": "A utility to generate an HMAC signature to authorize AWS API requests.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "homepage": "https://github.com/ramhiser/aws-hmac",
   "dependencies": {
     "crypto": "0.0.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
   }
 }
