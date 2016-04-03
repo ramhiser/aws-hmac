@@ -1,6 +1,7 @@
 var crypto = require("crypto");
 /**
- * Get the signature/digest of a supplied input string
+ * Get the signature/digest of a supplied input string.
+
  * @param data [Required] the string to encode
  * @param aws_secret_key [Required] Secret key used to access AWS services
  * @param algorithm [Optional] Encryption algorithm, defaults to sha256
@@ -14,7 +15,8 @@ function generate_hmac(data, aws_secret_key, algorithm, encoding) {
 }
 
 /**
- * Generate AWS signature headers to sign request
+ * Generate AWS signature headers to sign request.
+
  * @param aws_access_id [Required] Unique AWS access ID to authorize account
  * @param aws_secret_key [Required] Secret key used to access AWS services
  * @returns JSON object with AWS signature headers
