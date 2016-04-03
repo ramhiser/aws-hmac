@@ -3,10 +3,12 @@
 A small Node.js utility to generate an HMAC signature to authorize AWS API
 requests.
 
+For more details about signing AWS requests, see the
+[AWS docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/query-interface-authentication.html).
+
 Special thanks to Robert Kehoe for providing
 [a clear example](https://www.robertkehoe.com/2013/10/generating-aws-hmac-in-nodejs/)
-from which this utility is derived. For more details, see the
-[AWS docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/query-interface-authentication.html).
+from which this utility is derived.
 
 ## Installation
 
